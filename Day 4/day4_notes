@@ -1,0 +1,5 @@
+State file is the heart of the terraform, If it gets compromised entire terraform infra will be a mess.
+So to add aditional security and to sync the local github repo code. It is better practice to store the state file in s3 using remote backend logic
+
+Remote backend: Whenever terraform init is executed, then terraform observes that state file in remote and will read it and compares it with the code that you have written.
+  
